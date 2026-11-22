@@ -289,7 +289,7 @@
     }
     .contact-block {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
     .contact-card {
@@ -312,6 +312,15 @@
       word-break: break-word;
     }
     .contact-card a:hover { color: var(--forest); text-decoration: underline; }
+    .guide-panel {
+      background: var(--paper-2);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 1.5rem 1.5rem 1.4rem;
+      max-width: 46rem;
+    }
+    .guide-panel p { margin: 0 0 1.1rem; }
+    .guide-panel .actions { margin-bottom: 0; }
     footer {
       border-top: 1px solid var(--rule);
       margin-top: 3.5rem;
@@ -385,6 +394,7 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#book">Book</a>
+        <a href="#guide">Free guide</a>
         <a href="#how-i-work">How I work</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -394,6 +404,7 @@
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#book">Book</a>
+          <a href="#guide">Free guide</a>
           <a href="#how-i-work">How I work</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -408,6 +419,7 @@
         <p class="lead">I run a registered eenmanszaak near Tilburg and take on ZZP assignments in marketing and growth, AI and automation, recruitment and HR tech, interim operations, and last-mile delivery. Client work is in English.</p>
         <div class="actions">
           <a class="btn btn-primary" href="mailto:zsolt.dombi@sonicjobs.nl?subject=Dombi%20Consulting%20enquiry">Email me</a>
+          <a class="btn btn-ghost" href="ai-quick-wins-guide.pdf">Download the free guide</a>
           <a class="btn btn-ghost" href="tel:+31684183195">Call +31 6 84183195</a>
         </div>
         <p class="meta">20–25 hours a week · English, Hungarian and Romanian · KvK 99426250</p>
@@ -522,6 +534,16 @@
       </div>
     </section>
 
+    <section id="guide">
+      <h2>Free guide</h2>
+      <div class="guide-panel">
+        <p>A short, practical PDF: <strong>5 AI tasks any small business can automate this week</strong>. It is written for restaurants, logistics firms, recruiters and small agencies, and uses tools most teams already have. No email sign-up — just download it.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="ai-quick-wins-guide.pdf">Download the free guide (PDF)</a>
+        </div>
+      </div>
+    </section>
+
     <section id="how-i-work">
       <h2>How I work and availability</h2>
       <ol class="steps">
@@ -561,6 +583,10 @@
         <div class="contact-card">
           <p class="label">Phone</p>
           <a href="tel:+31684183195">+31 6 84183195</a>
+        </div>
+        <div class="contact-card">
+          <p class="label">Google</p>
+          <a href="https://share.google/p9Df08Ixs498S7gT6" target="_blank" rel="noopener noreferrer">Find Dombi Consulting on Google</a>
         </div>
       </div>
     </section>
