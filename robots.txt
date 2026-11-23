@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bazsozsolt.github.io/dombi-consulting/sitemap.xml
